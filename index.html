@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Weather Dashboard</h1>
+            <div class="me">
+            <h5>Made by:Tanishq Rathi</h5>
+            <div>
+                <a href="https://www.instagram.com/rathitanishq/" target="_blank"><img src="https://tanishqrathi12.github.io/My-Portfolio/Logos/Insta.png" alt="Click me" height="50"></a>
+                <a href="https://www.linkedin.com/in/tanishq-rathi-580714295/?originalSubdomain=in" target="_blank"><img src="https://tanishqrathi12.github.io/My-Portfolio/Logos/linkedin.png" alt="Click me" height="50"></a>
+                <a href="https://github.com/TanishqRathi12" target="_blank"><img src="https://tanishqrathi12.github.io/My-Portfolio/Logos/github.png" alt="Click me" height="50"></a>
+                <!-- <a href=""><img src="" alt="Click me" height="50"></a> -->
+            </div>
+            </div>
+        </header>
+        <main>
+            <div class="inputField">
+                <input type="text" id="input" placeholder="Enter your City.." required>
+                <button class="show"  onclick=Weather()>Get Weather</button>
+            </div>    
+            <section class="location">
+                <img class="image1" src="" alt="" height="100">
+                <div class="City"></div>
+                <div class="time"></div>
+            </section>
+            <section class="current">
+                <div class="temp"></div>
+                <div class="weather"></div>
+            </section>
+        </main>
+        <footer>
+            <h3>&copy; 2024 Weather Dashboard</h3>
+        </footer>
+    </div>
+</body>
+<script src="Script.js"></script>
+</html>
