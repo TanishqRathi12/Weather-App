@@ -1,0 +1,164 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to bottom, #E0FFFF, #F5F5F5);
+}
+header{
+    background-image: linear-gradient( to bottom,#06beb6 , #48b1bf);
+}
+h1{
+    color: white;
+    margin: 0px;
+    padding: 1.3em;
+    padding-bottom: 0.3em;
+    text-align: center;
+    padding-bottom: 0px;
+}
+.me{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
+.me img{
+    justify-content: right;
+    padding: 0em;
+    margin-right: 0.6em;
+    margin-bottom: 0px;
+}
+h5{
+    margin-left: 0.3em;
+    color: white;
+    letter-spacing: 0.08em;
+    margin-bottom: 0px;
+    padding-bottom: 1.7em;
+}
+main .inputField{
+    display: flex;
+    justify-content: center;
+    margin-top: 8em;
+}
+input{
+    height: 2.em;
+    width: 17em;
+    outline:solid 1px;
+    outline-color:#0077CC ;
+    border-radius: 0.4em;
+}
+
+button{
+  background-image: linear-gradient(#42A1EC, #0070C9);
+  border: 1px solid #0077CC;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin-left: 1em;
+}
+
+button:disabled {
+  cursor: default;
+  opacity: .3;
+}
+
+button:hover {
+  background-image: linear-gradient(#51A9EE, #147BCD);
+  border-color: #1482D0;
+  text-decoration: none;
+}
+
+button:active {
+  background-image: linear-gradient(#3D94D9, #0067B9);
+  border-color: #006DBC;
+  outline: none;
+}
+
+button:focus {
+  box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+  outline: none;
+}
+/* button{
+    background-color: aqua;
+    margin-left: 1em;
+}
+button:hover{
+    color: white;
+    background-color: rgb(0, 36, 156);
+} */
+.location {
+    text-align: center;
+    margin-top: 2em;
+}
+.City{
+    font-size: 1.8em;
+}
+.time{
+    font-size: 1.3em;
+}
+.current{
+    text-align: center;
+}
+.temp{
+    font-size: 2em;
+}
+.weather{
+    font-size: 2em;
+}
+.Humid{
+    font-size: 2em;
+}
+.feelLike{
+    font-size: 2em;
+}
+
+footer{
+    color: white;
+    justify-content: baseline;
+    text-align: center;
+    background-image: linear-gradient( to bottom,#06beb6 , #48b1bf);
+    margin-top: 7.98em;
+}
+footer h3{
+    margin-top: 14.65em;
+    margin-bottom: 0px;
+    padding: 1.52em;
+}
+@media screen and (max-width:410px) {
+    main .inputField{
+        margin-top: 2.56em
+    }
+   
+}
+.City{
+    margin: 0px;
+    padding: 0px;
+}
+.time{
+    margin: 0px;
+    padding: 0px;
+}
+.temp{
+    margin: 0px;
+    padding: 0px;
+}
+.weather{
+    margin: 0px;
+    padding: 0px;
+}
