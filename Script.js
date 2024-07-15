@@ -9,6 +9,7 @@ function Weather(){
 async function fetchApi(argument){
     try{
         let api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${argument}&appid=256156d28a4575e841a3cce2fdfc060b&units=metric`)
+
         if(!api.ok){
            throw new Error("Couldn't fetch the weather");
         }
@@ -22,12 +23,14 @@ async function fetchApi(argument){
     }
 }
 function display(argu){
-    console.log(argu)
-    //let image = document.querySelector(".image1").src=argu.current.condition.icon;
-    //image.innerHTML=`${argu.current.condition.icon}`
+
+
 
     let locate = document.querySelector(".location .City");
     locate.innerHTML=`<h3 style="margin:0.5em">${argu.name},${argu.sys.country}</h3>`;
+
+    //let image = document.querySelector(".image1").src=argu.current.condition.icon;
+    //image.innerHTML=`${argu.current.condition.icon}`
 
     let date = new  Date();
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -37,6 +40,7 @@ function display(argu){
     din.innerHTML=`<h3 style="margin:0.4em">${days[date.getDay()]}-${date.getDate()}-${months[date.getMonth()]},${date.getFullYear()}</h3>`;
 
     let condition = document.querySelector(".current .temp");
+
     condition.innerHTML=`<h4 style="margin:0.4em">Condition: ${argu.weather[0].main}</h4>`;
 
     let temperature = document.querySelector(".current .weather");
